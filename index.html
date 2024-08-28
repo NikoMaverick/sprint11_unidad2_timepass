@@ -1,10 +1,4 @@
-
-const express = require('express');
-const route = express.Router();
-
-route.get('/', (req, res) => {
-    res.send(`
-        <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -27,7 +21,3 @@ route.get('/', (req, res) => {
     </div>
 </body>
 </html>
-        `)
-})
-
-module.exports = route;
