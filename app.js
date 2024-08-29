@@ -3,10 +3,10 @@ const app = express();
 const PORT = 3000
 
 const indexRoutes = require('./routes/index.js');
-const endrouteRoutes = require('/routes/endroute.js');
+const endrouteRoutes = require('./routes/endroute.js');
 
-const horaMiddleware = require('./middleware/horaMiddleware.js');
-const validarHora = require('./middleware/validarHora.js');
+const horaMiddleware = require('./middlewares/horaMiddleware.js');
+const validarHora = require('./middlewares/validarHora.js');
 
 
 app.use(horaMiddleware);
